@@ -1,0 +1,27 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+.titulo {
+    text-align: center;
+    color: #007a33;
+}
+
+.subtitulo {
+    margin-top: 30px;
+    color: #444;
+}
+
+.lista {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.imagen {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+
+}
