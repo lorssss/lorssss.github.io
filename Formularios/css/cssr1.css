@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(240, 230, 215);
+}
+
+
+header h1, h2 {
+    color: #e6542b; 
+    text-align: center;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.caja-formulario {
+    background: rgb(235, 203, 193);
+    color: #e6542b;
+    width: 420px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 3px solid #e6542b;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.caja-formulario h3 {
+    color: #e6542b;
+    border-bottom: 2px solid #e6542b;
+    padding-bottom: 3px;
+}
+
+
+.grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #e6542b;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #e6542b;
+    border-radius: 5px;
+    background: #fff5e9;
+    color: #e6542b;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #e6542b;
+    border: none;
+    color: beige;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #c74320;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    color: #e6542b;
+}
+
+.boton-volver.boton-volver:hover1 {
+  background-color: #b33c00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.boton-volver1 {
+  background-color: #e65100;
+  color: white;
+  text-decoration: none;
+  padding: 6px 15px; 
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px; 
+  transition: all 0.3s ease;
+}
