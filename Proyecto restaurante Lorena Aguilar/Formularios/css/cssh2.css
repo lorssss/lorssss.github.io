@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+
+header {
+    background: rgb(171, 30, 30);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.caja-formulario {
+    background: rgb(169, 63, 63);              
+    color: black;                 
+    width: 420px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 3px solid black;      
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.caja-formulario h3 {
+    margin-top: 25px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    color: black;                 
+}
+
+
+.grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: black; 
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    border: 2px solid black;       
+    background: #ffdddd;           
+    border-radius: 5px;
+    color: black;
+}
+
+
+.opciones label {
+    margin-bottom: 8px;
+    display: block;
+    color: black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: black;  
+}
+
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    background: black;    
+    color: rgb(156, 57, 57);          
+    border: 2px solid rgb(145, 52, 52);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgb(138, 49, 49);
+    color: black;
+    border-color: black;
+}
+
+
+.cancelar {
+    background: #660000;   
+    border: 2px solid black;
+    color: white;
+}
+
+.cancelar:hover {
+    background: black;
+    color: rgb(165, 59, 59);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+.boton-volver1:hover {
+  background-color: #b33c00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.boton-volver1 {
+  background-color: #7e2a1e;
+  color: white;
+  text-decoration: none;
+  padding: 6px 15px; 
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px; 
+  transition: all 0.3s ease;
+}

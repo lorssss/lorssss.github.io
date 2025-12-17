@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="Hoja de inscripción en ciclos formativos de grado superior.">
+    <meta name="keywords" content="inscripción, ciclos formativos, grado superior, formulario">
+    <meta name="author" content="Tu Nombre">
+
+    <title>Formulario 1 - Hoja de Inscripción</title>
+
+    <link rel="stylesheet" href="css/cssh1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hoja de Inscripción</h1>
+        <h2>Ciclos Formativos de Grado Superior</h2>
+    </header>
+
+    <main>
+        <section class="contenedor">
+
+            <form class="caja-formulario">
+
+                <h3>Datos personales</h3>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="localidad">Localidad de nacimiento:</label>
+                    <input type="text" id="localidad" name="localidad" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" id="cp" name="cp" required>
+                </div>
+
+                <h3>Forma de acceso</h3>
+
+                <div class="grupo opciones">
+                    <label><input type="radio" name="acceso" value="bachillerato"> Bachillerato</label>
+                    <label><input type="radio" name="acceso" value="experimental"> Experimental</label>
+                    <label><input type="radio" name="acceso" value="cou"> COU Opción</label>
+                    <label><input type="radio" name="acceso" value="fp2"> FP2</label>
+                    <label><input type="radio" name="acceso" value="prueba"> Prueba Libre</label>
+
+                    <label>
+                        <input type="radio" name="acceso" value="otros">
+                        Otros (especifique):
+                    </label>
+                    <input type="text" name="otros_acceso" placeholder="Especificar si eligió 'Otros'">
+                </div>
+
+                <h3>Documentos adjuntados</h3>
+
+                <div class="grupo opciones">
+                    <label><input type="checkbox" name="doc_dni"> Fotocopia DNI</label>
+                    <label><input type="checkbox" name="doc_certificado"> Certificado académico</label>
+
+                    <label>
+                        <input type="checkbox" name="doc_otros">
+                        Otros documentos (especifique):
+                    </label>
+                    <input type="text" name="otros_documentos" placeholder="Especificar si eligió 'Otros'">
+                </div>
+
+                <button type="submit" class="btn">Enviar inscripción</button>
+            </form>
+
+        </section>
+</main>
+<footer class="pie">
+        <p><a href="../index.html" class="boton-volver2">Volver al inicio</a></p>
+    </footer>
+
+    <footer>
+        <p>Actividad 7 • IES Inca Garcilaso</p>
+    </footer>
+
+</body>
+
+</html>
