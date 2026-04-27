@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de reserva del restaurante">
+    <meta name="keywords" content="reserva, restaurante, formulario">
+    <title>Haz una reserva</title>
+
+    <link rel="stylesheet" href="css/cssr1.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Haz una reserva</h1>
+</header>
+
+<main>
+    <section class="contenedor">
+        <form class="caja-formulario">
+
+            <div class="grupo">
+                <label for="nombre">Su nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="grupo">
+                <label for="clientes">Número de clientes:</label>
+                <input type="number" id="clientes" min="1" required>
+            </div>
+
+            <div class="grupo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div class="grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+
+            <div class="grupo">
+                <label for="fecha">Fecha de la reserva:</label>
+                <input type="date" id="fecha" required>
+            </div>
+
+            <div class="grupo">
+                <label for="hora">Hora de la reserva:</label>
+                <input type="time" id="hora" required>
+            </div>
+
+            <div class="grupo">
+                <label for="mensaje">Su mensaje:</label>
+                <textarea id="mensaje" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Solicitar reserva</button>
+
+        </form>
+    </section>
+</main>
+        <footer class="pie">
+        <p><a href="../index.html" class="boton-volver1">Volver al inicio</a></p>
+     </footer>
+
+
+</body>
+</html>

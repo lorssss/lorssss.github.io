@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para enviar un mensaje">
+    <meta name="keywords" content="mensaje, contacto, formulario">
+    <title>Envíenos su mensaje</title>
+
+    <link rel="stylesheet" href="css/cssr1.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Envíenos su mensaje</h1>
+</header>
+
+<main>
+    <section class="contenedor">
+        <form class="caja-formulario">
+
+            <div class="grupo">
+                <label for="nombre">Su nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="grupo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div class="grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+
+            <div class="grupo">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" required>
+            </div>
+
+            <div class="grupo">
+                <label for="mensaje">Su mensaje:</label>
+                <textarea id="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+
+        </form>
+    </section>
+</main>
+<footer class="pie">
+        <p><a href="../index.html" class="boton-volver1">Volver al inicio</a></p>
+    </footer>
+
+
+</body>
+</html>

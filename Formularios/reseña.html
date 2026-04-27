@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Receta</title>
+    <link rel="stylesheet" href="css/cssr1.css">
+</head>
+<body>
+
+<header>
+    <h1>Reseña del Plato</h1>
+</header>
+
+<div class="contenedor">
+    <div class="caja-formulario">
+        <h3>Deja tu reseña</h3>
+        <form action="/enviar-reseña" method="POST">
+
+            <div class="grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="grupo">
+                <label for="plato">Nombre del plato:</label>
+                <input type="text" id="plato" name="plato" placeholder="Ej: Lasaña" required>
+            </div>
+
+            <div class="grupo">
+                <label for="valoracion">Valoración:</label>
+                <select id="valoracion" name="valoracion" required>
+                    <option value="">Selecciona</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+                    <option value="4">⭐⭐⭐⭐ 4</option>
+                    <option value="3">⭐⭐⭐ 3</option>
+                    <option value="2">⭐⭐ 2</option>
+                    <option value="1">⭐ 1</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu opinión sobre el plato..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar reseña</button>
+        </form>
+    </div>
+</div>
+
+
+</main>
+<footer class="pie">
+        <p><a href="../index.html" class="boton-volver1">Volver al inicio</a></p>
+    </footer>
+
+    <footer>
+        <p>Actividad 7 • IES Inca Garcilaso</p>
+    </footer>
+
+</html>
