@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parte 2</title>
+    <style>
+        .titulo-activo {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="titulo">Encabezado</h1>
+<p id="parrafo">Esto es un párrafo</p>
+
+<table border="1">
+<tr>
+<td id="c1">Celda 1</td>
+<td id="c2">Celda 2</td>
+</tr>
+</table>
+
+<br>
+
+<button onclick="cambiarH1()">Cambiar H1</button>
+<button onclick="cambiarP()">Cambiar P</button>
+<button onclick="cambiarCeldas()">Cambiar Celdas</button>
+<button onclick="nuevaCelda()">Nueva Celda</button>
+<button onclick="colorCeldas()">Color</button>
+
+<script>
+
+function cambiarH1(){
+    let h1 = document.getElementById("titulo");
+    h1.innerHTML = "DOM Manipulado";
+    h1.style.color = "red";
+    h1.classList.add("titulo-activo");
+}
+
+function cambiarP(){
+    let p = document.getElementById("parrafo");
+    p.innerHTML += " <strong>Texto añadido</strong>";
+}
+
+function cambiarCeldas(){
+    document.getElementById("c1").innerHTML = "Nueva Celda 1";
+    document.getElementById("c2").innerHTML = "Nueva Celda 2";
+}
+
+function nuevaCelda(){
+    let fila = document.querySelector("tr");
+    let nueva = document.createElement("td");
+    nueva.innerHTML = "Nueva";
+    fila.appendChild(nueva);
+}
+
+function colorCeldas(){
+    document.getElementById("c1").style.background="blue";
+    document.getElementById("c2").style.background="green";
+}
+
+document.getElementById("c1").onclick=function(){
+    this.style.background="yellow";
+}
+document.getElementById("c2").onclick=function(){
+    this.style.background="yellow";
+}
+
+</script>
+
+</body>
+</html>
